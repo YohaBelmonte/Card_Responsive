@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+}
+main {
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items:center;
+  }
+
+  .card{
+    background-color: white;
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 50vh;
+    left: 10%;
+    top: 0%;
+    border-radius: 25px;
+    /* SOMBRA↓ */
+    box-shadow: 0px 35px 80px  rgba(0,0,0,0.45);
+    transition: 0.9s;
+}
+
+.card:hover{
+    transform: scale(1.04);
+}
+
+.img-box{
+    background-color: white;
+    position: relative;
+    width: 300px;
+    height: 250px;
+    left: 1%;
+    top:50%;
+    /* Sirve para que el "top" mueva el div desde 
+    su centro↓ */
+    transform: translateY(-50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    /* para ocultar el borde de la imagen hacemos
+    que este div amolde a los elementos de adentro ↓*/
+    overflow: hidden;
+
+}
+
+.img-box img{
+    position: relative;
+    /* Este conjunto de propiedades le dice al contenido 
+    que llene el contenedor de varias maneras; como 
+    "preservar esa relación de aspecto" o 
+    "estirar y ocupar tanto espacio como sea posible ↓*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenido{
+    display: flex;
+    position: relative;
+    width: 690px;
+    height:300px ;
+    justify-content: space-between;
+}
+.description{
+    /* background-color: yellow; */
+    position: relative;
+    width: 560px;
+    margin-left: 20px;
+    padding: 0px 10px;
+}
+.title{
+   font-family: 'Poppins',Helvetica,Arial,sans-serif;
+   font-size: 1.3em;
+   
+}
+h3{
+    font-family:'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 0;
+}
+.calific-start{
+    position: relative;
+    width: 90px;
+    height: 20px;
+    margin: 5px 0px 15px 0 ; 
+}
+.calific-start img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+h2{
+    font-family: 'Poppins',Helvetica,Arial,sans-serif;
+    font-size: 0.75em;
+    color: #4a4f54;
+    margin:3px;
+    font-weight:600;
+}
+h2 img{
+    width: 15px;
+    height: 15px;
+}
+
+.precio{
+    /* background-color: rgb(205, 127, 127); */
+    position: relative;
+    width: 80px;
+    height: 100%;
+    margin: 15px 0px 0px 0px;
+}
+h4{
+    /* background-color: antiquewhite; */
+    font-family:'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 5px 0px 20px 0;
+    justify-content: end;
+}
+p{
+    /* background-color: azure; */
+    font-family:'Poppins', Helvetica,Arial,sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+}
+button{
+    background-color: black;
+    color: #fff;
+    font-family:'Poppins', sans-serif;
+    fill: #fff;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 190px;
+    cursor: pointer;
+}
+
+@media (max-width: 780px) {
+    .main-body {
+        /* background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%); */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-items: center;
+        align-items:center;
+      }
+    
+      .card{
+        background-color: white;
+        position: relative;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 720px;
+        left: 20px;
+        top: 10%;
+    }
+        
+    .img-box{
+        background-color: white;
+        width: 300px;
+        height: 250px;
+        left: 3.5%;
+        top:14%;    
+    }
+    
+    .contenido{
+        width: 95%;
+        height:70vh ;
+        justify-content: space-between;
+    
+    }
+    .description{
+        /* background-color: yellow; */
+        position: relative;
+        width: 95%;
+        margin-left: 20px;
+        padding: 0px 10px;
+    }
+    .title{
+        font-family: 'Poppins',Helvetica,Arial,sans-serif;
+        font-size: 1em;
+        
+     }
+     h3{
+         font-family:'Poppins', sans-serif;
+         font-size: 0.7em;
+         font-weight: 400;
+         margin: 0;
+     }
+      
+     .precio{
+         /* background-color: rgb(205, 127, 127); */
+         position: relative;
+         width: 80px;
+         height: 100%;
+         margin: 10px 0px 0px 0px;
+     }
+     
+     p{
+         /* background-color: azure; */
+         font-family:'Poppins', Helvetica,Arial,sans-serif;
+         font-size: 1.2em;
+         font-weight: 600;
+         line-height: 1;
+         margin: 0;
+     }
+     button{
+         background-color: black;
+         color: #fff;
+         font-family:'Poppins', sans-serif;
+         fill: #fff;
+         font-size: 0.7em;
+         height: 50px;
+         border-radius: 4px;
+         margin-top: 50px;
+         cursor: pointer;
+     }
+
+
+    
+}
